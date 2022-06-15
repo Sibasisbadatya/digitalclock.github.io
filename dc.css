@@ -119,11 +119,7 @@ body {
     
         transition: background-color, box-shadow, 1s, 1s;
     }
-    .stating{
-        position: absolute;
-        top: 20%;
-        left: 30%;
-    }
+  
 }
 @media only screen and (max-width:668px) {
     .stating {
@@ -154,11 +150,7 @@ body {
     
         transition: background-color, box-shadow, 1s, 1s;
     }
-    .stating{
-        position: absolute;
-        top: 20%;
-        left: 30%;
-    }
+ 
     
 #day {
     grid-column: 1/2;
@@ -208,11 +200,7 @@ body {
     
         transition: background-color, box-shadow, 1s, 1s;
     }
-    .stating{
-        position: absolute;
-        top: 17%;
-        left: 30%;
-    }
+
     
 #day {
     grid-column: 1/2;
@@ -262,11 +250,7 @@ body {
     
         transition: background-color, box-shadow, 1s, 1s;
     }
-    .stating{
-        position: absolute;
-        top: 17%;
-        left: 20%;
-    }
+
     
 #day {
     grid-column: 1/2;
