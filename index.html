@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Bebas+Neue&family=Caveat&family=Cookie&family=Dancing+Script&family=Josefin+Sans&family=Kdam+Thmor+Pro&family=Lobster+Two&family=Racing+Sans+One&family=Style+Script&family=Water+Brush&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="dc.css">
+  
+</head>
+<body>
+    <div class="stating">TIME IS-</div>
+    <div class="container">
+    <div id="day"></div>
+    <div id="month"></div>
+    <div id="year"></div>
+    <div id="clock"></div>
+</div>
+    
+    <script>
+        function Time(){
+             // Creating object of the Date class
+     var date = new Date();
+           // Get current hour
+     var hour = date.getHours();
+     // Get current minute
+     var minute = date.getMinutes();
+     // Get current second
+     var second = date.getSeconds();
+     // Variable to store AM / PM
+     var period = "";
+     // Assigning AM / PM according to the current hour
+     if (hour >= 12) {
+     period = "PM";
+     } else {
+     period = "AM";
+     }
+     // Converting the hour in 12-hour format
+     if (hour == 0) {
+     hour = 12;
+     } else {
+     if (hour > 12) {
+     hour = hour - 12;
+     }
+     }
+     // Updating hour, minute, and second
+     // if they are less than 10
+     hour = update(hour);
+     minute = update(minute);
+     second = update(second);
+     // Adding time elements to the div
+     document.getElementById("clock").innerText = hour + " : " + minute + " : " + second + " " + period;
+     // Set Timer to 1 sec (1000 ms)
+     setTimeout(Time, 1000);
+    }
+     // Function to update time elements if they are less than 10
+     // Append 0 before time elements if they are less than 10
+    function update(t) {
+     if (t < 10) {
+     return "0" + t;
+     }
+     else {
+     return t;
+     }
+    }
+    Time();
+
+
+function day(){
+    var date=new Date();
+    let weekDay = [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    let today = weekDay[date.getDay()];
+    document.getElementById("day").innerText=today;
+}
+day();
+function month(){
+    var date=new Date();
+let monthlist = [ "february", "March", "April", "May", "June", "July", "August","September", "October", "November", "December","January"]
+let month = monthlist[date.getDay()];
+document.getElementById("month").innerText=month;
+}
+month();
+
+function year(){
+    var date=new Date();
+let year = date.getFullYear();
+document.getElementById("year").innerText=year;
+}
+year();
+
+    </script>
+</body>
+</html>

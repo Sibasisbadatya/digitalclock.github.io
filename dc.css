@@ -1,0 +1,289 @@
+.html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #182C61;
+}
+
+.stating {
+    font-size: 10rem;
+    font-family: 'Bebas Neue', cursive;
+    color: cyan;
+    text-shadow: 2px 2px 6px #7f8fa6;
+}
+
+.container {
+    border: 3px solid #25CCF7;
+    display: grid;
+    width: 60%;
+    font-family: 'Caveat', cursive;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 7vh 7vh 7vh 7vh 7vh;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    -webkit-box-reflect: below 3px linear-gradient(transparent, transparent, #000f);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    transition: background-color, box-shadow, 1s, 1s;
+}
+
+.container:hover {
+    background-color: #25CCF7;
+    border: 2px 5px solid cyan;
+
+}
+
+#day {
+    grid-column: 1/2;
+    color: #FC427B;
+    font-size: 2rem;
+
+}
+
+#month {
+    grid-column: 2/3;
+    color: #FC427B;
+    font-size: 2rem;
+}
+
+#year {
+    grid-column: 3/4;
+    color: #FC427B;
+    font-size: 2rem;
+}
+
+#clock {
+    grid-column: 1/4;
+    grid-row: 2/6;
+    color: #f8a5c2;
+    font-size: 7rem;
+}
+
+@media only screen and(max-width:1150px) {
+    .stating {
+        font-size: 9rem;
+    }
+
+    #clock {
+        grid-column: 1/4;
+        grid-row: 2/6;
+        color: #f8a5c2;
+        font-size: 6rem;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .stating {
+        font-size: 8rem;
+    }
+
+    #clock {
+        grid-column: 1/4;
+        grid-row: 2/6;
+        color: #f8a5c2;
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width:780px) {
+    .stating {
+        font-size: 5rem;
+    }
+
+    #clock {
+        grid-column: 1/4;
+        grid-row: 2/6;
+        color: #f8a5c2;
+        font-size: 3rem;
+    }
+    .container {
+        border: 3px solid #25CCF7;
+        display: grid;
+        width: 60%;
+        font-family: 'Caveat', cursive;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 4vh 4vh 4vh 4vh 4vh;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        -webkit-box-reflect: below 3px linear-gradient(transparent, transparent, #000f);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        transition: background-color, box-shadow, 1s, 1s;
+    }
+    .stating{
+        position: absolute;
+        top: 20%;
+        left: 30%;
+    }
+}
+@media only screen and (max-width:668px) {
+    .stating {
+        font-size: 4rem;
+    }
+
+    #clock {
+        grid-column: 1/4;
+        grid-row: 2/6;
+        color: #f8a5c2;
+        font-size: 3rem;
+    }
+    .container {
+        border: 3px solid #25CCF7;
+        display: grid;
+        width: 60%;
+        font-family: 'Caveat', cursive;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 4vh 4vh 4vh 4vh 4vh;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        -webkit-box-reflect: below 3px linear-gradient(transparent, transparent, #000f);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        transition: background-color, box-shadow, 1s, 1s;
+    }
+    .stating{
+        position: absolute;
+        top: 20%;
+        left: 30%;
+    }
+    
+#day {
+    grid-column: 1/2;
+    color: #FC427B;
+    font-size: 2rem;
+
+}
+
+#month {
+    grid-column: 2/3;
+    color: #FC427B;
+    font-size: 2rem;
+}
+
+#year {
+    grid-column: 3/4;
+    color: #FC427B;
+    font-size: 2rem;
+}
+}
+@media only screen and (max-width:500px) {
+    .stating {
+        font-size: 3rem;
+    }
+
+    #clock {
+        grid-column: 1/4;
+        grid-row: 2/6;
+        color: #f8a5c2;
+        font-size: 2rem;
+    }
+    .container {
+        border: 3px solid #25CCF7;
+        display: grid;
+        width: 60%;
+        font-family: 'Caveat', cursive;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 4vh 4vh 4vh 4vh 4vh;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        -webkit-box-reflect: below 3px linear-gradient(transparent, transparent, #000f);
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-40%, -50%);
+    
+        transition: background-color, box-shadow, 1s, 1s;
+    }
+    .stating{
+        position: absolute;
+        top: 17%;
+        left: 30%;
+    }
+    
+#day {
+    grid-column: 1/2;
+    color: #FC427B;
+    font-size: 1.5rem;
+
+}
+
+#month {
+    grid-column: 2/3;
+    color: #FC427B;
+    font-size: 1.5rem;
+}
+
+#year {
+    grid-column: 3/4;
+    color: #FC427B;
+    font-size: 1.5rem;
+}
+}
+@media only screen and (max-width:360px) {
+    .stating {
+        font-size: 3rem;
+    }
+
+    #clock {
+        grid-column: 1/4;
+        grid-row: 2/6;
+        color: #f8a5c2;
+        font-size: 1.5rem;
+    }
+    .container {
+        border: 3px solid #25CCF7;
+        display: grid;
+        width: 60%;
+        font-family: 'Caveat', cursive;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 3vh 3vh 3vh 3vh 3vh;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        -webkit-box-reflect: below 3px linear-gradient(transparent, transparent, #000f);
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-40%, -50%);
+    
+        transition: background-color, box-shadow, 1s, 1s;
+    }
+    .stating{
+        position: absolute;
+        top: 17%;
+        left: 20%;
+    }
+    
+#day {
+    grid-column: 1/2;
+    color: #FC427B;
+    font-size: 1.2rem;
+
+}
+
+#month {
+    grid-column: 2/3;
+    color: #FC427B;
+    font-size: 1.2rem;
+}
+
+#year {
+    grid-column: 3/4;
+    color: #FC427B;
+    font-size: 1.2rem;
+}
+}
